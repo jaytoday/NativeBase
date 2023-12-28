@@ -13,3 +13,9 @@ img
 # Test cases
 __tests__
 dist/__tests__
+
+# Example
+example/
+expo-example/
+next-example/
+RNBareExample/

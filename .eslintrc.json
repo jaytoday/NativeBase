@@ -1,15 +1,19 @@
 {
-  "parser": "babel-eslint",
+  "extends": ["@react-native-community", "prettier"],
   "rules": {
-    "indent": [
+    "prettier/prettier": [
       "error",
-      2
-    ]
+      {
+        "quoteProps": "preserve",
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false
+      }
+    ],
+    "no-bitwise": 0,
+    "prefer-const": "warn",
+    "no-console": ["error", { "allow": ["warn", "error"] }]
   },
-  "plugins": [
-    "react",
-    "jsx-a11y",
-    "import",
-    "react-native"
-  ]
+  "plugins": ["prettier"]
 }
